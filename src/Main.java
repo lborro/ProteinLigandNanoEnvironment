@@ -16,8 +16,8 @@ import br.embrapa.cnptia.gpbc.plc.descriptors.protein.ProteinNanoEnvironment;
 public class Main {
 
 	public static void main(String[] args) throws Exception {
-		//System.setProperty("http.proxyHost", "proxy.cnptia.embrapa.br");
-		//System.setProperty("http.proxyPort", "3128");
+		System.setProperty("http.proxyHost", "proxy.cnptia.embrapa.br");
+		System.setProperty("http.proxyPort", "3128");
 
 		ExecutorService pool = Executors.newFixedThreadPool(3);
 		Set<Future<ProteinNanoEnvironment>> results = new HashSet<Future<ProteinNanoEnvironment>>();
